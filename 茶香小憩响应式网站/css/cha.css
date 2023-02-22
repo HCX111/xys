@@ -1,0 +1,99 @@
+body{
+    background-color: #212121 !important;
+}
+*{
+    color: white;
+}
+.top img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.center{
+    text-align: center;
+}
+.row{
+    font-size: 20px;
+    text-align: center;
+}
+.t1{
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.x{
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+.x .t1{
+    text-align: center;
+}
+ .a{
+    width: 100%;
+    height: 280px;
+    /* background: thistle; */
+    text-align: center;
+}
+.a1{
+    margin-top: 25%;
+    font-size: 60px;
+}
+.a2{
+    font-size: 14px;
+}
+.a3::before {
+    content: "";
+    width: 1px;
+    height:200px;
+    position: absolute;
+    top: 20%;
+    left: 99%;
+    background: #ccc;
+}
+.b1{
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.tu{
+    margin-top: 2%;
+}
+.tu img{
+    width: 100%;
+}
+.tu .z1{
+    font-size: 18px;
+    margin-top: 2%;
+}
+.tu .z2{
+    font-size: 14px;
+    margin-top: 2%;
+    line-height: 25px;
+}
+.c1 .p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.c1{
+    margin-bottom: 2%;
+}
+.q img{
+    width: 100%;
+    /* height: 300px; */
+}
+
+.o{
+    margin-top: 2%;
+}
+.v{
+    margin-top: 2%;
+}
+@media screen and (max-width:990px) {
+    .q img{
+        width: 100%;
+        margin-bottom: 5%;
+        /* height: 300px; */
+    }
+    .tu img{
+        width: 80%;
+    }
+}

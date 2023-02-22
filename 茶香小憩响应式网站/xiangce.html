@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/xiangce.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>相册</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">首页</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                    <li><a href="caidan.html">菜单</a></li>
+                    <li><a href="meishi.html">美食</a></li>   
+                    <li><a href="hongpei.html">烘焙</a></li>
+                    <li><a href="zhuangxinson.html">专星送</a></li>
+                    <li><a href="gongfang.html">产品工坊</a></li>
+                    <li><a href="cha.html">茶文化</a></li>
+                    <li><a href="kalishi.html">咖文化</a></li>
+                    <li><a href="chalishi.html">奶茶文化</a></li>
+                    <li class="active"><a href="#">相册 <span class="sr-only">(current)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="denglu.html">登录</a></li>
+                <li><a href="zhuce.html">注册</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 a">
+                <img src="./image/x1.webp" alt="">
+                <img src="./image/x2.webp" alt="">
+                <img src="./image/x9.webp" alt="">
+                <img src="./image/x10.webp" alt="">
+                <img src="./image/16.webp" alt="">
+                <img src="./image/17.webp" alt="">
+            </div>
+            <div class="col-md-3 b">
+                <img src="./image/x3.webp" alt="">
+                <img src="./image/x4.webp" alt="">
+                <img src="./image/x11.webp" alt="">
+                <img src="./image/x12.webp" alt="">
+                <img src="./image/18.webp" alt="">
+                <img src="./image/x19.webp" alt="">
+            </div>
+            <div class="col-md-3 a">
+                <img src="./image/x5.webp" alt="">
+                <img src="./image/x6.webp" alt="">
+                <img src="./image/x21.webp" alt="">
+                <img src="./image/x14.webp" alt="">
+                <img src="./image/x20.webp" alt="">
+                <img src="./image/x13.webp" alt="">
+            </div>
+            <div class="col-md-3 b">
+                <img src="./image/x7.webp" alt="">
+                <img src="./image/x8.webp" alt="">
+                <img src="./image/x15.webp" alt="">
+                <img src="./image/x22.webp" alt="">
+                <img src="./image/x23.webp" alt="">
+                <img src="./image/x24.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+       $(function(){
+        $('.a img').click(function(){
+				//查看大图
+				$(this).after("<div class='wrapper'></div>");
+				var imgSrc = $(this).attr('src');
+				$(".wrapper").css("background-image", "url(" + imgSrc + ")");
+				$('.wrapper').fadeIn(1000);
+				//关闭并移除图层
+				$('.wrapper').click(function(){
+					$('.wrapper').fadeOut(1000).remove();
+				});
+			});
+
+      $('.b img').click(function(){
+				//查看大图
+				$(this).after("<div class='wrapper'></div>");
+				var imgSrc = $(this).attr('src');
+				$(".wrapper").css("background-image", "url(" + imgSrc + ")");
+				$('.wrapper').fadeIn(1000);
+				//关闭并移除图层
+				$('.wrapper').click(function(){
+					$('.wrapper').fadeOut(1000).remove();
+				});
+			});
+      $('.a img').hover(function(){
+          $(this).siblings().stop().fadeTo(400,0.5);
+      },
+      function(){
+          $(this).siblings().stop().fadeTo(400,1);
+      })
+      $('.b img').hover(function(){
+          $(this).siblings().stop().fadeTo(400,0.5);
+      },
+      function(){
+          $(this).siblings().stop().fadeTo(400,1);
+      })
+    })
+    </script>
+</body>
+</html>

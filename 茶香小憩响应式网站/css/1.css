@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@media screen and (min-width:1536px){
+    .container{
+        width: 1536px;
+    }
+}
+.row .left{
+    height: 500px;
+    background: yellow;
+}
+.row .right{
+    background: orange;
+}
+.left .row{
+    padding: 10px 10px;
+    /* background: white; */
+}
+.left img{
+    width: 10%;
+}
+.top a{
+    margin: 0 20px;
+}
+.left .certen{
+    width: 70%;
+    /* margin-top: 200px; */
+    margin: 250px auto 0;
+    background: orange;
+}
+.certen span{
+    font-size: 25px;
+}
+.bottom{
+    width: 100%;
+    margin-top: 50px;
+    background: turquoise;
+}
+.deng{
+    margin-left: 140px;
+}
+.deng img{
+    width: 10%;
+}
+.deng a{
+    font-size: 16px;
+    margin: 0 10px;
+}
+/* .righttop{
+    width: 100%;
+    height: 30%;
+    background: hotpink;
+}
+.carousel,
+.carousel img {
+    width: 100%;
+    height: 300px!important;
+} */

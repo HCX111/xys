@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.jumbotron h1{
+    font-family: '宋体';
+}
+.jumbotron p{
+    font-family: '楷体';
+}
+.left img{
+    width: 100%;
+}
+.left .p1 p{
+    font-size: 18px;
+    margin-top: 20%;
+}
+.bottom img{
+    margin:20px;
+    width: 80%;
+}
+@media screen and (max-width:990px){
+    /* .container-fluid{
+        width: 750px;
+    } */
+    .left .p1 p{
+        font-size: 14px;
+        margin-top: 2%;
+    }
+}
+.footer {
+    padding: 3em 0;
+    background: #292929;
+    margin-top: 20px;
+}
+
+.footer-left h3 {
+    color: #FFFFFF;
+    font-size: 2em;
+    margin: 0;
+    font-family: 'Dorsa-Regular';
+    letter-spacing: 2px;
+}
+
+.footer-left form {
+    margin-top: 3em;
+}
+
+.footer-left input[type="text"] {
+    width: 100%;
+    color: #898888;
+    background: none;
+    outline: none;
+    font-size: .9em;
+    padding: .5em;
+    margin-bottom: 2em;
+    border-bottom: solid 1px #595959;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.footer-left input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #292929;
+    padding: .5em 1.5em;
+    font-size: 16px;
+    margin: -1.5em 0 1em 0;
+    background: #FFCC33;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+
+.footer-left input[type="submit"]:hover {
+    background: #4D4D4D;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.footer-middle h3 {
+    color: #FFFFFF;
+    font-size: 2em;
+    margin: 0;
+    font-family: 'Dorsa-Regular';
+    letter-spacing: 2px;
+}
+
+.f-logo a {
+    display: block;
+    width: 307px;
+    color: #FFF;
+    font-size: 6em;
+    font-family: 'Dorsa-Regular';
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.footer-right p {
+    color: #FFF;
+    font-size: .9em;
+    margin: 2em 0 0 0;
+    line-height: 1.8em;
+}
+
+.address p {
+    color: #FFFFFF;
+    font-size: .9em;
+    line-height: 1.8em;
+    padding-left: 3em;
+    margin: 2em 0 0 0;
+    background: url(../image/location.png) no-repeat 0px 5px;
+}
+
+.address p span {
+    display: block;
+    
+}
+
+.phone {
+    margin-top: 2em;
+}
+
+.phone p {
+    color: #FFFFFF;
+    font-size: .9em;
+    line-height: 1.8em;
+    padding-left: 3em;
+    margin: 2em 0 0 0;
+    background: url(../image/phone.png) no-repeat 0px 0px;
+}
+
+.copyright {
+    background: #4D4D4D;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.copyright-left p {
+    color: #FFF;
+    font-size: .9em;
+    margin: .4em 0 0 0;
+}
+
+.copyright-left p a {
+    color: #FFF;
+}
+
